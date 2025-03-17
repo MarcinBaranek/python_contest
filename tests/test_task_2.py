@@ -8,7 +8,7 @@ from task_2 import filter_prime_numbers
     [
         (range(10), [0, 1, 4, 6, 8, 9]),
         ((3, 5, 7, 13, 11), []),
-        ([-4, -243, 7, 121], [121])
+        ([-4, -243, 7, 121], [-4, -243, 121])
     ]
 )
 def test_filter_prime_numbers(numbers, expected):
