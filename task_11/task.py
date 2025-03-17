@@ -1,7 +1,7 @@
 # coding=utf-8
 
 
-class Task:
+class Task(type):
     """Metaclass ignoring the inheritance
 
     Examples:
@@ -12,3 +12,5 @@ class Task:
     >>> "noise" in dir(Child)
     Flase
     """
+    def __new__(cls, clsname, bases, attrs):
+        return type.__new__(cls, clsname, (), attrs)

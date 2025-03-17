@@ -16,4 +16,4 @@ def interpret_math_text(text: str) -> float:
     >>> interpret_math_text("2**2")
     4
     """
-    return 0
+    return eval(text)

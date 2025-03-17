@@ -8,5 +8,4 @@ def sort_by_value(dictionary: dict[str, int]) -> list[str]:
     >>> sort_by_value({"one": 1, "two": 2})
     ["one", "two"]
     """
-    # TODO fix me
-    return ["one", "two"]
+    return [item[0] for item in sorted(dictionary.items(), key=lambda x: x[1])]

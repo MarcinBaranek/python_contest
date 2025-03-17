@@ -18,3 +18,5 @@ class Task:
     >>> obj(1, 3, a=3, b=4)
     ([1, 3], {'a': 3, 'b': 4})
     """
+    def __call__(self, *args, **kwargs):
+        return list(args), kwargs

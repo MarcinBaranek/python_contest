@@ -15,4 +15,5 @@ class Task(dict):
     >>> [e for e in task]
     [1, 2]
     """
-    pass
+    def __iter__(self):
+        return iter(sorted(self.values()))

@@ -9,5 +9,4 @@ def remove_duplicates(items: Iterable[Hashable]) -> list[Hashable]:
     >>> remove_duplicates([1, 1, 2, 1, 2])
     [1, 2]
     """
-    # TODO fix me
-    return [1, 2]
+    return list(set(items))

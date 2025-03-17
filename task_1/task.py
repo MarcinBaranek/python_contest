@@ -3,4 +3,4 @@
 
 def say_my_name() -> str:
     """Method return word: 'Heisenberg'"""
-    # TODO fix me
+    return 'Heisenberg'

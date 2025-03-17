@@ -14,5 +14,4 @@ def merge_two_collections(
     >>> merge_two_collections((1, 2, 3), {3, 4, 5})
     [1, 2, 3, 3, 4, 5]
     """
-    # TODO fix me
-    return [1, 2, 3, 3, 4, 5]
+    return sorted(list(first_collection) + list(second_collection))
