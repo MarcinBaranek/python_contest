@@ -9,6 +9,6 @@ def method(items, start):
 
 def test_raise():
     for start in (0, -10, 13, 20):
-        m = args_adder("start", 0)(method)
+        m = args_adder("start", start)(method)
         assert m([1, 2, 3]) == start + 6
     assert m.__doc__ == """docstring for method."""
